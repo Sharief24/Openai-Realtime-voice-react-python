@@ -1,0 +1,100 @@
+/* Chat.css */
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.chat-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* The Glowing Orb (ringBox) */
+.orb-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.orb {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* Matches the blue/white blurry gradient in your image */
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(50, 150, 255, 0.8));
+  box-shadow: 0 0 60px rgba(0, 132, 255, 0.4), inset 0 0 40px rgba(255, 255, 255, 0.5);
+  animation: breathe 4s ease-in-out infinite;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Animation for the orb */
+@keyframes breathe {
+  0% { transform: scale(1); box-shadow: 0 0 60px rgba(0, 132, 255, 0.4); }
+  50% { transform: scale(1.05); box-shadow: 0 0 80px rgba(0, 132, 255, 0.6); }
+  100% { transform: scale(1); box-shadow: 0 0 60px rgba(0, 132, 255, 0.4); }
+}
+
+/* Status Text */
+.status-text {
+  color: #888;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.timer-text {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* Button Controls Area */
+.controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Shared Button Styles */
+.control-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease;
+  background-color: #f0f0f0; /* Light gray background like the image */
+}
+
+.control-btn:active {
+  transform: scale(0.95);
+}
+
+.control-btn svg {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
+.btn-end {
+  background-color: #f0f0f0;
+}
+.btn-end:hover {
+  background-color: #e0e0e0;
+}

@@ -1,0 +1,47 @@
+.chat-container {
+  height: 350px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.message-user {
+  background: #d0e4ff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 4px;
+  align-self: flex-end;
+  max-width: 70%;
+}
+
+.message-ai {
+  background: #ececec;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 4px;
+  align-self: flex-start;
+  max-width: 70%;
+}
+
+.mic-button {
+  background: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mic-button.recording {
+  background: red;
+}
+
+.waveform-canvas {
+  width: 100%;
+  height: 80px;
+  background: #111;
+  border-radius: 8px;
+}

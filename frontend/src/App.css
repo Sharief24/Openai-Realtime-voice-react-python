@@ -1,0 +1,42 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ring-box {
+  width: 350px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #5a5a5a, #2e2e2e);
+  color: white;
+}
+
+.call-btn,
+.end-btn {
+  padding: 14px 24px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.call-btn {
+  background: green;
+  color: white;
+}
+
+.end-btn {
+  background: red;
+  color: white;
+}
+
+.call-status {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.timer {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
