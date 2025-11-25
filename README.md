@@ -67,3 +67,9 @@ flask-cors
 python-dotenv
 
 requests
+
+Preview:
+<img width="1070" height="739" alt="image" src="https://github.com/user-attachments/assets/0562ebe5-90cf-4d5c-8419-a30e2f921f5d" />
+<img width="743" height="605" alt="image" src="https://github.com/user-attachments/assets/1e36249a-2235-45d5-914d-18159584b4f1" />
+
+
